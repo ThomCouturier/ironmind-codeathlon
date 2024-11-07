@@ -5,16 +5,24 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+.container-fluid {
+    height: 100%;
+    overflow-y: hidden;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #505050;
     color: #333;
     line-height: 1.6;
-    background-image: url("../img/stade-telus.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
+    background-image: url("../img/stade-telus.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-blend-mode: overlay !important;
 }
 
 /* Header */
@@ -46,12 +54,30 @@ body {
 
 /* Section Hero */
 .hero {
+    height: 100%;
+    overflow-y: auto;
     background-color: rgba(255, 215, 0, 0.8); /* Or Laval */
     color: #A6192E; /* Rouge Laval */
     text-align: center;
     padding: 100px 10%;
+    height: 100%;
+}
+.heroabout {
+    background-color:  #A6192E; /* Rouge Laval */
+    color: rgba(255, 215, 0, 0.8); /* Or Laval */
+    text-align: center;
+    padding: 100px 10%;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
+.heroabout p{
+    font-size: 15px;
+}
+#buggyBoo{
+   width:300px;
+   height:300px;
+}
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
